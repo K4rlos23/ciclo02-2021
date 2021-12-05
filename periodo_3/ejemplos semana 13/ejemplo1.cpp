@@ -3,22 +3,21 @@
 
 using namespace std;
 int main() {
-    stack <int> s;
-    s.push(10);
-    s.push(11);
-    s.push(12);
-    s.push(13);
-    s.push(14);
-    s.push(15);
-    s.push(16);
-    s.push(17);
-    s.push(18);
-    s.push(19);
-    s.push(20);
-    cout << "Tamanio de la pila o stack: " << s.size() << endl;
-    cout << "Parte superior o top del stack: " << s.top() << endl;
+    stack <int> P;
+    P.push(1);
+P.push(2);
+P.pop();
+P.push(3);
+P.push(4);
+P.pop();
+P.pop();
+P.pop();
+P.push(5);
+P.pop();
+    cout << "Tamanio de la pila o stack: " << P.size() << endl;
+    cout << "Parte superior o top del stack: " << P.top() << endl;
     stack <int> s1;
-    s1 = s;
+    s1 = P;
     while (!s1.empty()){
         cout << s1.top() << endl;
         s1.pop();
